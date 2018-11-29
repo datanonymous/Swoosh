@@ -2,13 +2,10 @@
     <string name="app_name">Swoosh</string>
     <string name="desired_league">DESIRED LEAGUE:</string>
     <string name="mens">MENS</string>
-    <string name="mens">MENS</string>
     <string name="womens">WOMENS</string>
     <string name="infant">INFANT</string>
     <string name="chicks_with_balls">chicks with balls</string>
-    <string name="womens">WOMENS</string>
     <string name="dudes_with_balls">dudes with balls</string>
-    <string name="infant">INFANT</string>
     <string name="you_monster">you monster...</string>
     <string name="next">NEXT</string>
 </resources>
