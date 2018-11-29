@@ -30,40 +30,43 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:background="@drawable/swoosh_button" android:fontFamily="@font/montserrat"
             android:textColor="@color/colorAccent" android:textSize="14sp"/>
-    <Button
-            android:text="MENS"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/button3"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" android:textColor="@color/colorAccent"
-            android:fontFamily="@font/montserrat" android:background="@drawable/swoosh_button"
-            tools:layout_editor_absoluteY="145dp"/>
-    <Button
-            android:text="WOMENS"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/button4" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/button3" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:textColor="@color/colorAccent" android:fontFamily="@font/montserrat"
-            android:background="@drawable/swoosh_button"/>
-    <Button
-            android:text="INFANT"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/button5" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/button4" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="@+id/imageView3"
-            android:layout_marginEnd="8dp" android:textColor="@color/colorAccent"
-            android:fontFamily="@font/montserrat" android:background="@drawable/swoosh_button"/>
     <TextView
             android:text="DESIRED LEAGUE:"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="131dp" android:id="@+id/textView4" android:textColor="@color/colorAccent"
-            android:fontFamily="@font/montserrat" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/button3"/>
+            android:id="@+id/textView4" android:textColor="@color/colorAccent"
+            android:fontFamily="@font/montserrat" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="367dp"
+            android:layout_height="187dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView4"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/button2">
+        <ToggleButton
+                android:text="MENS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/toggleButton"
+                android:fontFamily="@font/montserrat" android:layout_marginTop="10dp" android:textOff="MENS"
+                android:textOn="dudes with balls" android:textColor="@color/colorAccent"
+                android:background="@drawable/swoosh_toggle"/>
+        <ToggleButton
+                android:text="WOMENS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/toggleButton2"
+                android:fontFamily="@font/montserrat" android:layout_marginTop="10dp" android:textOff="WOMENS"
+                android:textOn="chicks with balls" android:textColor="@color/colorAccent"
+                android:background="@drawable/swoosh_toggle"/>
+        <ToggleButton
+                android:text="INFANT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/toggleButton3"
+                android:fontFamily="@font/montserrat" android:layout_marginTop="10dp" android:textOff="INFANT"
+                android:textOn="you monster..." android:textColor="@color/colorAccent"
+                android:background="@drawable/swoosh_toggle"/>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
