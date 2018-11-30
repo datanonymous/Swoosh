@@ -23,6 +23,10 @@
 
         <activity android:name=".LeagueActivity">
         </activity>
+        <activity android:name=".SkillActivity">
+        </activity>
+        <activity android:name=".FinishActivity">
+        </activity>
     </application>
 
 </manifest>
